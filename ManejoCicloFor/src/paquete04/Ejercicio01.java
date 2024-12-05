@@ -15,7 +15,8 @@ public class Ejercicio01 {
         String cadena = "";
         String cadena2 = "";
         int serie;
-        for (i = 30; i <= 10; i--) {
+        
+        for (i = 30; i >= 10; i--) {
             for (int i2 = 1; i2 <= 4; i2++){
                 serie = i * i2;
                 cadena = String.format("%s%d-", cadena, serie);
@@ -23,6 +24,6 @@ public class Ejercicio01 {
             cadena2 = String.format("%s%s\n", cadena2, cadena);
             cadena = "";
         }
-        System.out.printf("%s\n", cadena2);
+        System.out.printf("%s\n",cadena2);
     }
 }
