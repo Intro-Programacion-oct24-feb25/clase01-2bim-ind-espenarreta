@@ -11,19 +11,13 @@ package paquete04;
 public class Ejercicio01 {
 
     public static void main(String[] args) {
-        int i;
+
         String cadena = "";
-        String cadena2 = "";
-        int serie;
-        
-        for (i = 30; i >= 10; i--) {
-            for (int i2 = 1; i2 <= 4; i2++){
-                serie = i * i2;
-                cadena = String.format("%s%d-", cadena, serie);
-            }
-            cadena2 = String.format("%s%s\n", cadena2, cadena);
-            cadena = "";
+
+        for (int i = 30; i >= 10; i--) {
+            cadena = String.format("%s%d-%d-%d-%d\n", cadena,
+                    i, i * 2, i * 3, i * 4);
         }
-        System.out.printf("%s\n",cadena2);
+        System.out.print(cadena);
     }
 }

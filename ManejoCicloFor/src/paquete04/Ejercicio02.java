@@ -10,12 +10,7 @@ package paquete04;
  */
 public class Ejercicio02 {
         public static void main(String[] args) {
-        String cadena = "";
-
-        for (int i = 30; i <= 10; i--) {
-            cadena+= String.format("%s%d-%d-%d-%d\n", cadena,
-                    i, i * 2, i * 3, i * 4);
-        }
-        System.out.print(cadena);
+            
+        
     }
 }
